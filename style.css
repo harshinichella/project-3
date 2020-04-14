@@ -1,0 +1,141 @@
+/* font family for 3 pages*/
+body{
+  font-family: Arial;
+}
+
+/*h1-h6 and p for all 3 pages*/
+p{
+  padding: 0.625em;
+}
+
+h1{
+  padding: 0.625em;
+  font-size: 1.875em;
+  font-family: 'Sen', sans-serif;
+}
+
+h3{
+  padding: 0.625em;
+  font-size: 1.25em;
+  font-weight: bold;
+  font-family: 'Sen', sans-serif;
+}
+
+h6{
+  font-family: 'Sen', sans-serif;
+  font-size: 0.625em; 
+  text-align: center;
+}
+
+/*header for all 3 pages*/
+.header{
+  margin: 1.25em;
+  text-align: center;
+  background: white;
+}
+
+.header h1{
+  padding: 0em;
+  font-size: 2.5em;
+  font-family: 'Sen', sans-serif;
+}
+
+.header p{
+  padding-top: 1.25em;
+}
+
+/*float*/
+footer{
+  float: none;
+  margin: 0em;
+}
+
+/*navigation bar for all 3 pages*/
+.nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0.0625em solid #e7e7e7;
+  background-color: white;
+  text-align:center;
+}
+
+.nav li{
+  display:inline;
+}
+
+.nav a{
+  display:inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0.875em 1em;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.nav li a.active {
+  color: black;
+  background-color: pink;
+}
+
+/*first section for all 3 pages*/
+.me {
+  text-align: center;
+  background-color: aliceblue;
+  width: 100%; 
+  padding: 0.625em; 
+}
+
+.me p{
+  padding: 0.625em;
+}
+
+/*background color quotes page*/
+.quotes{
+  background-color: lavenderblush;
+}
+
+/*square bullet points for resume page*/
+ul.list{
+  list-style: square inside url("sqpurple.gif");
+  padding-left: 1.875em; 
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+}
+
+li.list{
+  padding: 0.625em;
+}
+
+/*gallery*/
+div.gallery{
+  margin: 0.3125em;
+  border: 0.0625em solid #ccc;
+  float: none;
+  width: 18.75em;
+  height: 18.75em; 
+}
+
+div.gallery:hover{
+  border: 0.0625em solid #777
+}
+
+div.gallery img{
+  width: 100%;
+  height: auto;
+}
+
+div.desc{
+  padding: 0.9375em;
+  text-align: center;
+}
+
+div.box {
+  background-color: white;
+  border: 0.0625em outset lightgrey;
+  padding: 0.625em;
+  margin: 1.25em;
+}
