@@ -27,11 +27,30 @@ h6{
   text-align: center;
 }
 
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.me {
+  width: 100%; 
+  padding: 0.625em; 
+  text-align: center;
+}
+
+.me p{
+  padding: 0.625em;
+}
+
+
 /*header for all 3 pages*/
 .header{
-  margin: 1.25em;
+  padding: 3em;
   text-align: center;
-  background: white;
+  background: aliceblue;
 }
 
 .header h1{
@@ -81,17 +100,7 @@ footer{
   background-color: pink;
 }
 
-/*first section for all 3 pages*/
-.me {
-  text-align: center;
-  background-color: aliceblue;
-  width: 100%; 
-  padding: 0.625em; 
-}
 
-.me p{
-  padding: 0.625em;
-}
 
 /*background color quotes page*/
 .quotes{
@@ -138,4 +147,9 @@ div.box {
   border: 0.0625em outset lightgrey;
   padding: 0.625em;
   margin: 1.25em;
+}
+
+#googleMap{
+  height: 40em;
+  width: 100%; 
 }
