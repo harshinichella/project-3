@@ -25,80 +25,35 @@
       <div class="me">
         <h1>Gallery</h1>
         <p>Here are some cool images, compliments of <a href="https://www.freeimages.com/">freeimages.com</a></p>
+        <p>Click one of the dots below to open the gallery. Then you can navigate using the right and left arrow buttons.</p>
       </div>
     </section>
-    <div class="gallery">
-      <a target="_blank" href="photos/chicagotraffic.jpg">
-        <img src="photos/chicagotraffic.jpg" alt="Chicago Traffic"> 
-      </a>
-      <div class="desc">Chicago Traffic</div>
-    </div>
-    <div class="gallery">
-      <a target="_blank" href="photos/chicagoboats.jpg">
-        <img src="photos/chicagoboats.jpg" alt="Chicago Boats"> 
-      </a>
-    <div class="desc">Boats on Lake Michigan</div>
-      </div>
+    <section>
       <div class="gallery">
-        <a target="_blank" href="photos/chicagoriver.jpg">
+        <div style="text-align:center">
+           <span class="dot" onclick="currentSlide(1)"></span>
+           <span class="dot" onclick="currentSlide(2)"></span>
+           <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="slides">
+          <div class="number">1 / 12</div>
+          <img src="photos/chicagotraffic.jpg" alt="Chicago Traffic"> 
+          <div class="desc">Chicago Traffic</div>
+        </div>
+        <div class="slides">
+          <div class="number">2 / 12</div>
+          <img src="photos/chicagoboats.jpg" alt="Chicago Boats"> 
+          <div class="desc">Boats on Lake Michigan</div>
+        </div>   
+        <div class="slides">
+          <div class="number">3 / 12</div>
           <img src="photos/chicagoriver.jpg" alt="Chicago River"> 
-        </a>
-        <div class="desc">Chicago River</div>
+          <div class="desc">Chicago River</div>
+        </div> 
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>  
       </div>
-      <div class="gallery">
-        <a target="_blank" href="photos/budgies.jpg">
-          <img src="photos/budgies.jpg" alt= "Budgies"> 
-        </a>
-        <div class="desc">Budgies</div>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="photos/cockatiels.jpg">
-          <img src="photos/cockatiels.jpg" alt="Cockatiels"> 
-        </a>
-        <div class="desc">Cockatiels</div>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="photos/parrots.jpg">
-          <img src="photos/parrots.jpg" alt="Parrots"> 
-        </a>
-        <div class="desc">Parrots</div>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="photos/japanesefood.jpg">
-          <img src="photos/japanesefood.jpg" alt="Japanese Food"> 
-        </a>
-      <div class="desc">Japanese Food</div>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="photos/italianfood.jpg">
-          <img src="photos/italianfood.jpg" alt="Italian Food"> 
-        </a>
-        <div class="desc">Italian Food</div>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="photos/burger.jpg">
-          <img src="photos/burger.jpg" alt="Burger"> 
-        </a>
-        <div class="desc">Burger</div>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="photos/glass.jpg">
-          <img src="photos/glass.jpg" alt="Glass"> 
-        </a>
-        <div class="desc">Glass</div>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="photos/mosaic.jpg">
-          <img src="photos/mosaic.jpg" alt="Mosaic"> 
-        </a>
-        <div class="desc">Mosaic</div>
-      </div>
-      <div class="gallery">
-        <a target="_blank" href="photos/mainboard.jpg">
-          <img src="photos/mainboard.jpg" alt="Mainboard"> 
-        </a>
-        <div class="desc">Mainboard</div>
-      </div>
+    </section>
     <div class="footer">
       <h6>Created by Harshini Chellasamy</h6>
     </div>

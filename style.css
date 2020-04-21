@@ -1,3 +1,9 @@
+@media only screen and (min-width: 0px and max-width: 600px) {
+  body {
+    background-color: aliceblue;
+  }
+}
+
 /* font family for 3 pages*/
 body{
   font-family: Arial;
@@ -73,15 +79,15 @@ footer{
   text-align:center;
 }
 
-.nav li{
-  display:inline;
-}
-
 .nav a{
   display:inline-block;
   text-decoration: none;
   color: black;
   padding: 0.875em 1em;
+}
+
+.nav li{
+  display:inline;
 }
 
 .nav li a:hover:not(.active) {
@@ -185,24 +191,6 @@ div.gallery img{
 
 .active, .dot:hover {
   background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 div.box {
