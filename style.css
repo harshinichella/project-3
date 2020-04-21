@@ -16,9 +16,16 @@ p{
 
 h1{
   padding: 0.625em;
-  font-size: 1.875em;
+  font-size: 1.775em;
   font-family: 'Sen', sans-serif;
 }
+
+h2{
+  padding: 0.625em;
+  font-size: 1.975em;
+  font-family: 'Sen', sans-serif;
+}
+
 
 h3{
   padding: 0.625em;
