@@ -27,14 +27,7 @@ h6{
   text-align: center;
 }
 
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
+/*section with my photo*/
 .me {
   width: 100%; 
   padding: 0.625em; 
@@ -63,7 +56,7 @@ h6{
   padding-top: 1.25em;
 }
 
-/*float*/
+/*footer*/
 footer{
   float: none;
   margin: 0em;
@@ -100,8 +93,6 @@ footer{
   background-color: pink;
 }
 
-
-
 /*background color quotes page*/
 .quotes{
   background-color: lavenderblush;
@@ -121,11 +112,37 @@ li.list{
 
 /*gallery*/
 div.gallery{
-  margin: 0.3125em;
-  border: 0.0625em solid #ccc;
-  float: none;
-  width: 18.75em;
-  height: 18.75em; 
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slides{
+  display: none
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 div.gallery:hover{
@@ -137,9 +154,55 @@ div.gallery img{
   height: auto;
 }
 
-div.desc{
-  padding: 0.9375em;
+.desc{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
+}
+
+.number {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 div.box {
@@ -149,6 +212,7 @@ div.box {
   margin: 1.25em;
 }
 
+/*map page*/
 #googleMap{
   height: 40em;
   width: 100%; 
