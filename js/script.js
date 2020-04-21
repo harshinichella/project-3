@@ -19,6 +19,8 @@ function myMap() {
 
 }
 
+//from w3schools
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
